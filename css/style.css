@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.contbody_scroll {
+    position: relative;
+    overflow: hidden;
+}
+
+/** Layout **/
+#wrap {
+    position: relative;
+}
+    header {
+        height: 45px;
+        background: #33353F;
+    }
+    #conWrap {
+        display: flex;
+        flex-direction: column;
+    }
+        #conUp {
+            flex: 2;
+            display: flex;
+        }
+            .s1-1 {
+                flex: 1;
+            }
+            .conUp_R {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+                .s1-2 {
+                    flex: 1;
+                }
+                .s1-3 {
+                    flex: 1;
+                }
+
+        #conDown {
+            flex: 1;
+            display: flex;
+        }
+            .s2-1 {
+                flex: 1;
+            }
+            .s2-2 {
+                flex: 1;
+            }
+
+/* header */
+header {
+    width: 100%;
+    padding: 0 45px;
+}
+    .lnbBtn {
+        float: left;
+        position: relative;
+        left: -45px;
+        z-index: 11;
+    }
+    .logo {
+        float: left;
+        width: 100%;
+        margin: 0 -45px;
+        text-align: center;
+    }
+    .searchBtn {
+        float: right;
+        position: relative;
+        left: 45px;
+    }
+
+header img {
+    height: 45px;
+}
+
+/* conWrap */
+
+#conWrap {
+    padding: 6px;
+}
+#conWrap section {}
+#conWrap section > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#conWrap section img {}
+
+    #conUp {
+        padding-bottom: 6px;
+    }
+        .s1-1 {
+            padding-right: 6px;
+        }
+        .s1-1 a {
+            background: #4AB8BC;
+        }
+        .s1-1 img {
+            width: 120px;
+        }
+        .conUp_R {
+        }
+            .s1-2 {
+                padding-bottom: 6px;
+            }
+            .s1-2 a {
+                background: #589DD2;
+            }
+            .s1-2 img {
+                width: 110px;
+            }
+            .s1-3 {
+            }
+            .s1-3 a {
+                background: #FF912F;
+            }
+            .s1-3 img {
+                width: 121px;
+            }
+
+    #conDown {
+    }
+        .s2-1 {}
+        .s2-1 a {
+            background: #589DD2;
+        }
+        .s2-1 img {
+            width: 124px;
+        }
+        .s2-2 {
+            padding-left: 6px;
+        }
+        .s2-2 a {
+            background: #8DCA35;
+        }
+        .s2-2 img {
+            width: 131px;
+        }
+
+        
+footer {
+    background: #222;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%;*/
+    padding: 15px 6px;
+    height: 117px; 
+    /* 원인을 모르겠는데 스크립트가 푸터 높이를 5px 적게 읽어와서 높이를 고정함... */
+}
+
+.quickmenu {
+    display: table;
+    width: 100%;
+    height: 33px;
+}
+.quickmenu li {
+    background-color: #535357;
+    display: table-cell;
+    width: 33.3%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #222;
+}
+.quickmenu li:first-child {
+    border-left: none;
+}
+.quickmenu li:last-child {
+    border-right: none;
+}
+.quickmenu li a {
+    display: block;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.telsns {
+    margin-top: 15px;
+}
+.telsns a {
+    color: #fff;
+    font-size: 19px;
+}
+.telsns a img {
+    width: 24px;
+    margin-left: 5px;
+}
+
+.pc {
+    position: absolute;
+    right: 6px;
+    text-align: right;
+    margin-top: -25px;
+}
+.pc a {
+    background-color: #000000;
+    display: inline-block;
+    padding: 4px 6px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* 좌측 슬라이더메뉴 */
+#lnb {
+    position: fixed;
+    width: 274px;
+    height: 100%;
+    top: 0;
+    left: -274px;
+    background-color: #F1F1F1;
+    z-index: 11;
+}
+    .lnb_login {
+        background-color: #111;
+        padding: 35px 20px 35px 17px;
+    }
+    .lnb_login span {
+        color: #fff;
+        font-size: 14px;
+    }
+    .lnb_login img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .lnb_list {
+        border-bottom: 1px solid #ddd; 
+    }
+    .lnb_list img {
+        width: 100%;
+    }
+
+    .lnb_res {
+        padding: 45px 20px;
+    }
+    .lnb_res img {
+        width: 100%;
+    }
+
+    .cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 10;
+        display: none;
+    }
